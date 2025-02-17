@@ -96,7 +96,7 @@ body {
 }
 
 ::selection {
-  background: #000080;
+  background: #dc8cdb;
   color: #fff;
 }
 
@@ -124,8 +124,8 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: #000088;
-  background: linear-gradient(-145deg, #000088 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219,138,222);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
@@ -135,14 +135,14 @@ body {
 }
 
 .main-button-gradient a:hover {
-  background: #000088;
-  background: linear-gradient(-145deg, #000088 0%, rgba(246,191,159,1) 100%);
+  background: rgb(219,138,222);
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
   opacity: 0.9;
 }
 
 .white-button a {
   font-size: 13px;
-  color: #000088;
+  color: #dc8cdb;
   background-color: #fff;
   padding: 12px 30px;
   display: inline-block;
@@ -159,7 +159,7 @@ body {
 .text-button a {
   font-size: 14px;
   font-weight: 500;
-  color: #000088;
+  color: #dc8cdb;
   text-decoration: underline !important;
   transition: all .3s;
 }
@@ -203,7 +203,7 @@ section {
 
 .section-heading h4 em {
   font-style: normal;
-  color: #000088;
+  color: #dc8cdb;
 }
 
 .section-heading p {
@@ -217,8 +217,8 @@ header
 --------------------------------------------- 
 */
 .background-header {
-  background: #000088 !important;
-  background: linear-gradient(-145deg, #000088 0%, rgba(246,191,159,1) 100%) !important;
+  background: rgb(219,138,222) !important;
+  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%) !important;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -376,7 +376,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #fff;
-  color: #000088!important;
+  color: #dc8cdb!important;
   padding-left: 25px;
 }
 
@@ -516,7 +516,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #000088;
+  color: #dc8cdb;
 }
 
 @media (max-width: 1200px) {
@@ -535,7 +535,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #000088!important;
+    color: #dc8cdb!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -593,7 +593,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #000088!important;
+    color: #dc8cdb!important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: relative;
