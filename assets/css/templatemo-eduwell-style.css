@@ -124,8 +124,8 @@ body {
 .main-button-gradient a {
   font-size: 13px;
   color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
+  background: rgb(138, 168, 222);
+  background: linear-gradient(-145deg, rgb(236, 236, 236) 0%, #2b87ff 100%);
   padding: 12px 30px;
   display: inline-block;
   border-radius: 5px;
