@@ -389,31 +389,31 @@
         <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
           <div class="item">
             <p>“HOPE IoT Beta Camp provided me with hands-on experience that transformed my understanding of IoT technology. The mentors are exceptionally knowledgeable!”</p>
-            <h4>Sarah Johnson</h4>
+            <h4>Milan</h4>
             <span>Student</span>
             <img src="assets/images/quote.png" alt="Quote">
           </div>
           <div class="item">
             <p>“The innovative curriculum and practical projects at HOPE IoT have empowered me to tackle real-world challenges. I’m excited for what’s coming next!”</p>
-            <h4>Michael Lee</h4>
+            <h4>Nandana</h4>
             <span>IoT Enthusiast</span>
             <img src="assets/images/quote.png" alt="Quote">
           </div>
           <div class="item">
             <p>“HOPE IoT sets a new benchmark in tech education. Their blend of online and offline sessions makes learning truly interactive and engaging.”</p>
-            <h4>Emily Davis</h4>
+            <h4>Dheeraj</h4>
             <span>Tech Professional</span>
             <img src="assets/images/quote.png" alt="Quote">
           </div>
           <div class="item">
             <p>“The expert mentorship at HOPE IoT has been a game changer. Their hands-on approach helped me build real IoT projects that I can showcase to employers.”</p>
-            <h4>Alex Martinez</h4>
+            <h4>Adarsh</h4>
             <span>Industry Specialist</span>
             <img src="assets/images/quote.png" alt="Quote">
           </div>
           <div class="item">
             <p>“I was amazed by the practical labs and the state-of-the-art tools provided at HOPE IoT. It’s the perfect place to launch your career in IoT!”</p>
-            <h4>Olivia Brown</h4>
+            <h4>Pranav</h4>
             <span>Recent Graduate</span>
             <img src="assets/images/quote.png" alt="Quote">
           </div>
@@ -451,10 +451,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Contact Form -->
+      </div><!-- Contact Form -->
       <div class="col-lg-4">
-        <form id="contact" action="" method="post">
+        <form id="contact" action="https://getform.io/f/aqokkkka" method="POST">
           <div class="row">
             <div class="col-lg-12">
               <div class="section-heading">
@@ -467,19 +466,45 @@
             </div>
             <div class="col-lg-12">
               <fieldset>
-                <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                <input type="text" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
               </fieldset>
             </div>
             <div class="col-lg-12">
               <fieldset>
-                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
               </fieldset>
             </div>
             <div class="col-lg-12">
               <fieldset>
-                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
               </fieldset>
             </div>
+            
+            <!-- Hidden Honeypot field to prevent spam -->
+            <input type="hidden" name="_gotcha" style="display:none !important">
+            
+            <!-- Checkbox and Hidden field for subscription -->
+            <fieldset>
+              <input type="checkbox" name="subscribe" value="yes" checked> Subscribe to our newsletter
+              <input type="hidden" name="subscribe" value="no">
+            </fieldset>
+      
+            <!-- Gender radio buttons -->
+            <fieldset>
+              <input type="radio" name="gender" value="male" checked> Male
+              <input type="radio" name="gender" value="female"> Female
+              <input type="radio" name="gender" value="other"> Other
+            </fieldset>
+      
+            <!-- Select field for work experience -->
+            <fieldset>
+              <select name="work-experience">
+                <option value="one-year">0-1 years</option>
+                <option value="one-five-years">1-5 years</option>
+              </select>
+            </fieldset>
+      
+            <!-- Submit button -->
             <div class="col-lg-12">
               <fieldset>
                 <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
@@ -488,6 +513,7 @@
           </div>
         </form>
       </div>
+      
       <!-- Social Icons & Footer -->
       <div class="col-lg-12">
         <ul class="social-icons">
