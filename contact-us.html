@@ -173,42 +173,68 @@ https://templatemo.com/tm-573-eduwell
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4">
-          <form id="contact" action="process_contact.php" method="post"> <!-- Update with actual backend script -->
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="section-heading">
-                  <h6>Contact Us</h6>
-                  <h4>Get in <em>Touch</em></h4>
-                  <p>We'd love to hear from you! Whether you're a student, mentor, or tech enthusiast, reach out to us.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="name" id="name" placeholder="Full Name" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="email" name="email" id="email" placeholder="Your Email" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
+<!-- Contact Form -->
+<div class="col-lg-4">
+  <form id="contact" action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Contact HOPE IoT</h6>
+          <h4>Say <em>Hello</em></h4>
+          <p>
+            Have questions about our courses, projects, or initiatives? Fill out the form below and our team will get back to you promptly.
+          </p>
         </div>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="text" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+        </fieldset>
+      </div>
+      
+      <!-- Hidden Honeypot field to prevent spam -->
+      <input type="hidden" name="_gotcha" style="display:none !important">
+      
+      <!-- Checkbox and Hidden field for subscription --
+      <fieldset>
+        <input type="checkbox" name="subscribe" value="yes" checked> Subscribe to our newsletter
+        <input type="hidden" name="subscribe" value="no">
+      </fieldset>
 
+      <!-- Gender radio buttons --
+      <fieldset>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+      </fieldset>
+
+      <!-- Select field for work experience --
+      <fieldset>
+        <select name="work-experience">
+          <option value="one-year">0-1 years</option>
+          <option value="one-five-years">1-5 years</option>
+        </select>
+      </fieldset>
+
+      <!-- Submit button -->
+      <div class="col-lg-12">
+        <fieldset>
+          <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</div>
         <div class="col-lg-12">
           <ul class="social-icons">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
