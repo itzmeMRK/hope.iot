@@ -180,56 +180,73 @@ https://templatemo.com/tm-573-eduwell
       <div class="col-lg-12">
         <div class="section-heading">
           <h6>Contact HOPE IoT</h6>
-          <h4>Say <em>Hello</em></h4>
+          <h4>Summer IoT Camp Registration <em>Form</em></h4>
           <p>
-            Have questions about our courses, projects, or initiatives? Fill out the form below and our team will get back to you promptly.
+            Ready to join our Summer IoT Camp? Fill out the details below to register your child. We will get back to you with more information!
           </p>
         </div>
       </div>
+
+      <!-- Student Name -->
       <div class="col-lg-12">
         <fieldset>
-          <input type="text" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+          <input type="text" name="student_name" id="student_name" placeholder="Student's Full Name" autocomplete="on" required>
         </fieldset>
       </div>
+
+      <!-- Parent Name -->
       <div class="col-lg-12">
         <fieldset>
-          <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+          <input type="text" name="parent_name" id="parent_name" placeholder="Parent's Full Name" autocomplete="on" required>
         </fieldset>
       </div>
+
+      <!-- Parent Contact Number -->
       <div class="col-lg-12">
         <fieldset>
-          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+          <input type="tel" name="parent_contact" id="parent_contact" placeholder="Parent's Contact Number" required>
         </fieldset>
       </div>
-      
+
+      <!-- Class Selection -->
+      <div class="col-lg-12">
+        <fieldset>
+          <select name="class" id="class" required>
+            <option value="">Select Class</option>
+            <option value="3">3rd Standard</option>
+            <option value="4">4th Standard</option>
+            <option value="5">5th Standard</option>
+            <option value="6">6th Standard</option>
+            <option value="7">7th Standard</option>
+            <option value="8">8th Standard</option>
+            <option value="9">9th Standard</option>
+            <option value="10">10th Standard</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <!-- Address -->
+      <div class="col-lg-12">
+        <fieldset>
+          <textarea name="address" id="address" placeholder="Complete Address" required></textarea>
+        </fieldset>
+      </div>
+
       <!-- Hidden Honeypot field to prevent spam -->
       <input type="hidden" name="_gotcha" style="display:none !important">
-      
-      <!-- Checkbox and Hidden field for subscription --
+
+      <!-- Checkbox and Hidden field for subscription -->
+      <!--
       <fieldset>
         <input type="checkbox" name="subscribe" value="yes" checked> Subscribe to our newsletter
         <input type="hidden" name="subscribe" value="no">
       </fieldset>
-
-      <!-- Gender radio buttons --
-      <fieldset>
-        <input type="radio" name="gender" value="male" checked> Male
-        <input type="radio" name="gender" value="female"> Female
-        <input type="radio" name="gender" value="other"> Other
-      </fieldset>
-
-      <!-- Select field for work experience --
-      <fieldset>
-        <select name="work-experience">
-          <option value="one-year">0-1 years</option>
-          <option value="one-five-years">1-5 years</option>
-        </select>
-      </fieldset>
+      -->
 
       <!-- Submit button -->
       <div class="col-lg-12">
         <fieldset>
-          <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+          <button type="submit" id="form-submit" class="main-gradient-button">Submit Registration</button>
         </fieldset>
       </div>
     </div>
