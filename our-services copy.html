@@ -81,81 +81,76 @@ https://templatemo.com/tm-573-eduwell
     </div>
   </section>
   <div class="col-lg-4">
-    <form id="camp-registration" action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h6>IoT Summer Camp Pre-Registration</h6>
-            <h4>Secure Your Spot</h4>
-            <p>
-              Please complete the form below to reserve your place in our upcoming IoT summer camp. Our team will contact you within 24 hours to confirm your registration.
-            </p>
-          </div>
+    <form id="camp-registration" action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <div class="section-heading" style="text-align: center; margin-bottom: 30px;">
+        <h6 style="color: #ff6b6b; margin-bottom: 5px;">IoT Summer Camp</h6>
+        <h4 style="color: #2d3142;">Pre-Registration</h4>
+        <p style="color: #666; font-size: 14px;">Secure your spot in our upcoming IoT summer camp</p>
+      </div>
+  
+      <div style="display: grid; gap: 20px;">
+        <div>
+          <label for="student-name" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Student Full Name</label>
+          <input type="text" name="student-name" id="student-name" placeholder="John Doe" 
+                 style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;" required>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <input type="text" name="student-name" id="student-name" placeholder="Student Full Name" autocomplete="on" required>
-          </fieldset>
+        <div>
+          <label for="parent-name" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Parent/Guardian Name</label>
+          <input type="text" name="parent-name" id="parent-name" placeholder="Jane Doe" 
+                 style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;" required>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <input type="text" name="parent-name" id="parent-name" placeholder="Parent/Guardian Full Name" required>
-          </fieldset>
+        <div>
+          <label for="phone-number" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Phone Number</label>
+          <input type="tel" name="phone-number" id="phone-number" placeholder="+1 (555) 123-4567"
+                 style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;" required>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Parent Phone Number (123-456-7890)" required>
-          </fieldset>
+        <div>
+          <label for="student-grade" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Student Grade</label>
+          <select name="student-grade" id="student-grade" 
+                  style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;" required>
+            <option value="">Select Grade</option>
+            <option value="5">5th Grade</option>
+            <option value="6">6th Grade</option>
+            <option value="7">7th Grade</option>
+            <option value="8">8th Grade</option>
+            <option value="9">9th Grade</option>
+          </select>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <select name="student-grade" id="student-grade" required>
-              <option value="">Select Student Grade</option>
-              <option value="5">5th Grade</option>
-              <option value="6">6th Grade</option>
-              <option value="7">7th Grade</option>
-              <option value="8">8th Grade</option>
-              <option value="9">9th Grade</option>
-              <option value="10">10th Grade</option>
-            </select>
-          </fieldset>
+        <div>
+          <label for="email" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com"
+                 style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;" required>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <input type="email" name="email-address" id="email-address" placeholder="Email Address" required>
-          </fieldset>
+        <div>
+          <label for="how-heard" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">How did you hear about us?</label>
+          <select name="how-heard" id="how-heard" 
+                  style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px;">
+            <option value="">Select Option</option>
+            <option value="website">Website</option>
+            <option value="social-media">Social Media</option>
+            <option value="school">School</option>
+            <option value="friend">Friend</option>
+          </select>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <select name="how-heard" id="how-heard">
-              <option value="">How did you hear about us?</option>
-              <option value="website">Website</option>
-              <option value="social-media">Social Media</option>
-              <option value="school">School Recommendation</option>
-              <option value="friend">Friend/Referral</option>
-            </select>
-          </fieldset>
+        <div>
+          <label for="special-needs" style="display: block; margin-bottom: 8px; color: #2d3142; font-weight: 500;">Special Needs</label>
+          <textarea name="special-needs" id="special-needs" placeholder="Any allergies or special requirements?"
+                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; height: 100px;"></textarea>
         </div>
   
-        <div class="col-lg-12">
-          <fieldset>
-            <textarea name="additional-info" id="additional-info" placeholder="Any allergies or special needs?"></textarea>
-          </fieldset>
-        </div>
-  
-        <!-- Hidden Honeypot field to prevent spam -->
-        <input type="hidden" name="_gotcha" style="display:none !important">
-  
-        <div class="col-lg-12">
-          <fieldset>
-            <button type="submit" id="form-submit" class="main-gradient-button">Register Now</button>
-          </fieldset>
+        <div style="text-align: center;">
+          <button type="submit" class="main-gradient-button" 
+                  style="background: linear-gradient(90deg, #ff6b6b, #ff9a6b); color: white; 
+                         padding: 12px 30px; border: none; border-radius: 5px; 
+                         font-size: 16px; cursor: pointer; transition: all 0.3s;">
+            Register Now
+          </button>
         </div>
       </div>
     </form>
