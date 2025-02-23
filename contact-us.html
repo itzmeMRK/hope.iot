@@ -173,113 +173,129 @@ https://templatemo.com/tm-573-eduwell
             </div>
           </div>
         </div>
-<!-- Enhanced Contact Form -->
-<div class="col-lg-4">
-  <form id="contact" action="https://usebasin.com/f/b500d58cdf82" method="POST">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-heading">
-          <h6>Contact HOPE IoT</h6>
-          <h4>Summer IoT Camp Registration <em>Form</em></h4>
-          <p>
-            Let's kickstart your child's tech journey this summer! Complete the form below to reserve their spot in the camp.
-          </p>
+        <style>
+          .form-control {
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            box-shadow: inset 0 0.5em 1.2em rgba(0,0,0,0.02);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #ffffff url(data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23343a40' width='24' height='24'><path d='M16.8351 11.2817L12.4127 7.07485 8.00026 11.2817C7.61546 11.6445 7.60766 12.3073 8.00026 12.6701L12.4127 16.6585C12.681 16.9068 13.1258 16.9068 13.3941 16.6585L17.8066 12.6701C18.1926 12.3073 18.1995 11.6445 17.8066 11.2817Z'/></svg>) no-repeat right 0.75rem center / 1rem 1rem;
+          }
+        
+          .form-control:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          }
+        </style>
+        
+        <!-- Contact Form -->
+        <div class="col-lg-4">
+          <form id="contact" action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Contact HOPE IoT</h6>
+                  <h4>Summer IoT Camp Registration</h4>
+                  <p>Register your child today for an unforgettable learning experience.</p>
+                </div>
+              </div>
+        
+              <!-- Student Details -->
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="student_name" id="student_name" placeholder="Student's Full Name" autocomplete="on" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="student_birthdate" id="student_birthdate" placeholder="Student's Birthdate (MM/DD/YYYY)" class="form-control" required>
+                </fieldset>
+              </div>
+        
+              <!-- Parent/Guardian Details -->
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="parent_name" id="parent_name" placeholder="Parent/Guardian's Full Name" autocomplete="on" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="tel" name="parent_contact" id="parent_contact" placeholder="Parent's Contact Number" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="email" name="parent_email" id="parent_email" placeholder="Parent's Email Address" class="form-control" required>
+                </fieldset>
+              </div>
+        
+              <!-- Educational Details -->
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="student_school" id="student_school" placeholder="Student's School Name" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <select name="student_class" id="student_class" class="form-control" required>
+                    <option value="">Current Class — Select</option>
+                    <option value="3">3rd Standard</option>
+                    <option value="4">4th Standard</option>
+                    <option value="5">5th Standard</option>
+                    <option value="6">6th Standard</option>
+                    <option value="7">7th Standard</option>
+                    <option value="8">8th Standard</option>
+                    <option value="9">9th Standard</option>
+                    <option value="10">10th Standard</option>
+                  </select>
+                </fieldset>
+              </div>
+        
+              <!-- Contact Preferences -->
+              <div class="col-lg-12">
+                <fieldset>
+                  <select name="preferred_contact_method" id="preferred_contact_method" class="form-control" required>
+                    <option value="">Preferred Contact Method — Select</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Calls</option>
+                    <option value="whatsapp">WhatsApp</option>
+                  </select>
+                </fieldset>
+              </div>
+        
+              <!-- Additional Information -->
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="student_interests" id="student_interests" placeholder="Student's Primary Tech Interest" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="how_heard" id="how_heard" placeholder="How did you hear about HOPE IoT Camp?" class="form-control" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="medical_needs" id="medical_needs" placeholder="Medical Needs/Dietary Restrictions (optional)" class="form-control">
+                </fieldset>
+              </div>
+        
+              <!-- Hidden Honeypot field to prevent spam -->
+              <input type="hidden" name="_gotcha" style="display:none !important">
+        
+              <!-- Submit button -->
+              <div class="col-lg-12">
+                <fieldset class="text-center">
+                  <button type="submit" id="form-submit" class="main-gradient-button">Submit Registration</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-      
-      <!-- Student Details -->
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="student_name" id="student_name" placeholder="Student's Full Name" autocomplete="on" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="student_birthdate" id="student_birthdate" placeholder="Student's Birthdate (MM/DD/YYYY)" required>
-        </fieldset>
-      </div>
-      
-      <!-- Parent/Guardian Details -->
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="parent_name" id="parent_name" placeholder="Parent/Guardian's Full Name" autocomplete="on" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="tel" name="parent_contact" id="parent_contact" placeholder="Parent's Contact Number" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="email" name="parent_email" id="parent_email" placeholder="Parent's Email Address" required>
-        </fieldset>
-      </div>
-      
-      <!-- Educational Details -->
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="student_school" id="student_school" placeholder="Student's School Name" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <select name="student_class" id="student_class" required>
-            <option value="">Current Class</option>
-            <option value="3">3rd Standard</option>
-            <option value="4">4th Standard</option>
-            <option value="5">5th Standard</option>
-            <option value="6">6th Standard</option>
-            <option value="7">7th Standard</option>
-            <option value="8">8th Standard</option>
-            <option value="9">9th Standard</option>
-            <option value="10">10th Standard</option>
-          </select>
-        </fieldset>
-      </div>
-      
-      <!-- Contact Preferences -->
-      <div class="col-lg-12">
-        <fieldset>
-          <select name="preferred_contact_method" id="preferred_contact_method" required>
-            <option value="">Preferred Contact Method</option>
-            <option value="email">Email</option>
-            <option value="phone">Phone Calls</option>
-            <option value="whatsapp">WhatsApp</option>
-          </select>
-        </fieldset>
-      </div>
-      
-      <!-- Additional Information -->
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="student_interests" id="student_interests" placeholder="Student's Primary Tech Interest (e.g., Robotics, Sensors, Coding)" required>
-        </fieldset>
-      </div>
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="how_heard" id="how_heard" placeholder="How did you hear about HOPE IoT Camp?" required>
-        </fieldset>
-      </div>
-      
-      <div class="col-lg-12">
-        <fieldset>
-          <input type="text" name="medical_needs" id="medical_needs" placeholder="Any Medical Needs or Dietary Restrictions (optional)">
-        </fieldset>
-      </div>
-      
-      <!-- Hidden Honeypot field to prevent spam -->
-      <input type="hidden" name="_gotcha" style="display:none !important">
-      
-      <!-- Submit button -->
-      <div class="col-lg-12">
-        <fieldset class="text-center">
-          <button type="submit" id="form-submit" class="main-gradient-button">Submit Registration</button>
-        </fieldset>
-      </div>
-    </div>
-  </form>
-</div>
         <div class="col-lg-12">
           <ul class="social-icons">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
