@@ -29,111 +29,149 @@ https://templatemo.com/tm-573-eduwell
   </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="HOPE IoT Beta Camp Pre-Registration">
-    <meta name="author" content="HOPE IoT">
-    <title>HOPE IoT - Beta Camp Pre-Registration</title>
-  
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-      .gradient-button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 12px 30px;
-        border-radius: 30px;
-        text-decoration: none;
-      }
-      .section-heading {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="bg-dark text-white py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1 class="mb-0">HOPE IoT Beta Camp</h1>
-          </div>
-          <div class="col-md-6 text-end">
-            <a href="#registration" class="gradient-button">Pre-Register Now</a>
-          </div>
-        </div>
-      </div>
-    </header>
-  
-    <!-- Main Banner -->
-    <section class="py-5" style="background: #f8f9fa">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="mb-4">Join Our 4-Week IoT Beta Camp</h2>
-            <p class="lead">Learn IoT from industry experts through hands-on projects and interactive labs</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Registration Form -->
-    <section id="registration" class="py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="section-heading">
-              <h2>Pre-Registration Form</h2>
-              <p>Fill out this form to secure your spot in our upcoming IoT Beta Camp</p>
-            </div>
-            <form action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST" class="bg-white p-4 rounded shadow">
-              <div class="mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-              </div>
-              <div class="mb-3">
-                <select name="course" class="form-select">
-                  <option value="beta-camp">IoT Beta Camp (4 Weeks)</option>
-                  <option value="advanced">Advanced IoT Projects</option>
-                  <option value="cloud-integration">IoT Cloud Integration</option>
-                </select>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" name="subscribe" class="form-check-input" checked>
-                <label class="form-check-label">Subscribe to our newsletter</label>
-              </div>
-              <button type="submit" class="gradient-button w-100">Submit Registration</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-      <div class="container">
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <p>© 2025 HOPE IoT Co., Ltd. | All Rights Reserved</p>
-          </div>
-          <div class="col-md-6 text-end">
-            <a href="https://s1sda-ies.web.app" target="_blank" class="text-white">Designed by HOPE Int Core</a>
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/20250219_104650.png" alt="EduWell Template">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="#services">Services</a></li>
+                        <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="our-services.html">Our Services</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li> 
+                        <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li> 
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** Header Area End ***** -->
+
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h4>What We Do</h4>
+            <h1>Our Services</h1>
           </div>
         </div>
       </div>
-    </footer>
-  
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-  </html>
+    </div>
+  </section>
+<!-- Pre-Registration Form -->
+<div class="col-lg-4">
+  <form id="pre-register" action="https://www.formbackend.com/f/0dd4812c4bb3bc8a" method="POST">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h6>Pre-Register for HOPE IoT Beta Camp</h6>
+          <h4>Secure Your Spot <em>Early</em></h4>
+          <p>Fill out the form below to join our exclusive IoT Beta Camp</p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="text" name="student_name" id="student-name" placeholder="Student's Full Name" autocomplete="on" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="text" name="parent_name" id="parent-name" placeholder="Parent's/Guardian's Name" autocomplete="on" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="tel" name="parent_phone" id="parent-phone" placeholder="Parent's Phone Number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="email" name="parent_email" id="parent-email" placeholder="Parent's Email" required>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <input type="text" name="school_name" id="school-name" placeholder="School/College Name" autocomplete="on">
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <select name="course_level" id="course-level" required>
+            <option value="" disabled selected>Select Desired Course Level</option>
+            <option value="beginner">Beginner (3rd - 5th Grade)</option>
+            <option value="intermediate">Intermediate (6th - 8th Grade)</option>
+            <option value="advanced">Advanced (9th - 12th Grade)</option>
+          </select>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <label for="agree-to-terms" class="terms-label">
+            <input type="checkbox" name="agree_to_terms" id="agree-to-terms" required>
+            I agree to the <a href="/terms.html" target="_blank">terms and conditions</a>
+          </label>
+        </fieldset>
+      </div>
+      <div class="col-lg-12">
+        <fieldset>
+          <label for="privacy-policy" class="privacy-label">
+            <input type="checkbox" name="privacy_policy" id="privacy-policy">
+            I agree to receive periodic updates on courses and events
+          </label>
+        </fieldset>
+      </div>
+      
+      <!-- Hidden Honeypot field to prevent spam -->
+      <input type="hidden" name="_gotcha" style="display:none !important">
+      
+      <div class="col-lg-12">
+        <fieldset>
+          <button type="submit" id="form-submit" class="main-gradient-button">Submit Pre-Registration</button>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved. 
+          
+          <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
