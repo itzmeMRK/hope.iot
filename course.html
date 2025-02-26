@@ -231,7 +231,7 @@
   </div>
 </section>
 
-<section class="our-courses" id="courses">
+<section class="our-courses week-1">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 offset-lg-3">
@@ -239,8 +239,7 @@
           <h6>OUR COURSES</h6>
           <h4>What You Will <em>Learn</em> - Week 1</h4>
           <p>
-            Explore the first week of our 4-week IoT Beta Camp, where you will get hands-on experience with IoT fundamentals. 
-            Learn about Arduino, sensors, data logging, and cloud platforms while working on exciting projects.
+            Explore the first week of our 4-week IoT Beta Camp, where you will get hands-on experience with IoT fundamentals.
           </p>
         </div>
       </div>
@@ -250,81 +249,48 @@
             <div class="row">
               <!-- Tab Menu -->
               <div class="col-lg-3">
-                <div class="menu">
-                  <div class="active gradient-border"><span>Day 1: Introduction to IoT & Arduino</span></div>
-                  <div class="gradient-border"><span>Day 2: Sensors & Data Logging</span></div>
-                  <div class="gradient-border"><span>Day 3: Cloud Platforms & IoT Data</span></div>
+                <div class="menu week-1-menu">
+                  <div class="active gradient-border" data-week="week-1" data-tab="day1"><span>Day 1: IoT & Arduino</span></div>
+                  <div class="gradient-border" data-week="week-1" data-tab="day2"><span>Day 2: Sensors & Data</span></div>
+                  <div class="gradient-border" data-week="week-1" data-tab="day3"><span>Day 3: Cloud Platforms</span></div>
                 </div>
               </div>
               <!-- Tab Content -->
               <div class="col-lg-9">
-                <ul class="nacc">
+                <ul class="nacc week-1-content">
                   <!-- Day 1 -->
-                  <li class="active">
+                  <li class="active" id="week-1-day1">
                     <div>
-                      <div class="left-image">
-                        <img src="assets/images/arduino.jpeg" alt="IoT & Arduino Basics" class="img-fluid w-100" style="object-fit: cover;">
-                        <div class="curriculum-details"></div>
-                      </div>
+                      <div class="left-image"><img src="assets/images/arduino.jpeg" alt="IoT Basics" class="img-fluid w-100"></div>
                       <div class="right-content">
-                        <h4>Day 1 - Introduction to IoT & Arduino</h4>
-                        <p>
-                          Kickstart your journey with an introduction to IoT and Arduino. 
-                          Learn about key IoT applications, explore Arduino hardware, and get hands-on experience with breadboards and components.
-                          You'll also build your first circuit to blink an LED using Arduino IDE.
-                        </p>
+                        <h4>Day 1 - IoT & Arduino</h4>
+                        <p>Learn IoT concepts and build your first Arduino project.</p>
                         <span>2 Hours per Session</span>
                         <span>1 Week</span>
-                        <span class="last-span">Hands-On Lab</span>
-                        <div class="text-button">
-                          <a href="register.html">Join Beta Camp</a>
-                        </div>
                       </div>
                     </div>
                   </li>
                   <!-- Day 2 -->
-                  <li>
+                  <li id="week-1-day2">
                     <div>
-                      <div class="left-image">
-                        <img src="assets/images/sensor.jpeg" alt="Sensors & Data Logging" style="object-fit: cover; width: 100%; height: auto; max-height: 300px;">
-                        <div class="curriculum-details"></div>
-                      </div>
+                      <div class="left-image"><img src="assets/images/sensor.jpeg" alt="Sensors"></div>
                       <div class="right-content">
-                        <h4>Day 2 - Sensors & Data Logging</h4>
-                        <p>
-                          Learn how to integrate sensors into your projects and collect real-time data. 
-                          Understand the DHT11 temperature and humidity sensor, explore data logging techniques, 
-                          and write Arduino code for capturing and displaying sensor data.
-                        </p>
+                        <h4>Day 2 - Sensors & Data</h4>
+                        <p>Work with DHT11 sensors and data logging.</p>
                         <span>2 Hours per Session</span>
                         <span>1 Week</span>
-                        <span class="last-span">Live Coding Session</span>
-                        <div class="text-button">
-                          <a href="register.html">Join Beta Camp</a>
-                        </div>
                       </div>
                     </div>
                   </li>
                   <!-- Day 3 -->
-                  <li>
+                  <li id="week-1-day3">
                     <div>
-                      <div class="left-image">
-                        <img src="assets/images/cloud.jpeg" alt="Cloud Platforms & IoT Data" style="object-fit: cover; width: 100%; height: auto; max-height: 300px;">
-                        <div class="curriculum-details"></div>
-                      </div>
+                      <div class="left-image"><img src="assets/images/cloud.jpeg" alt="Cloud"></div>
                       <div class="right-content">
-                        <h4>Day 3 - Cloud Platforms & IoT Data</h4>
-                        <p>
-                          Discover how to send sensor data to the cloud for real-time monitoring.
-                          Set up a ThingSpeak dashboard, visualize live data, and explore troubleshooting techniques. 
-                          Prepare for your first full IoT project: the Smart Light system.
-                        </p>
+                        <h4>Day 3 - Cloud Platforms</h4>
+                        <p>Send IoT data to the cloud and visualize it.</p>
                         <span>2 Hours per Session</span>
                         <span>1 Week</span>
-                        <span class="last-span">Interactive Labs</span>
-                        <div class="text-button">
-                          <a href="register.html">Join Beta Camp</a>
-                        </div>
                       </div>
                     </div>
                   </li>
