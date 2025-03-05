@@ -325,27 +325,28 @@ https://templatemo.com/tm-573-eduwell
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
+      
       .card-container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2rem;
-          padding: 2rem;
-          max-width: 1100px;
-          margin: 0 auto;
-          justify-content: center; /* Centers cards horizontally */
-      }
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            justify-content: center; /* Added to center cards */
+        }
 
-      .card {
-          display: grid;
-          place-items: center;
-          width: calc(25% - 2rem);
-          min-width: 350px;
-          height: 430px;
-          overflow: hidden;
-          border-radius: 0.625rem;
-          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-          transition: transform 0.3s ease;
-      }
+        .card {
+            display: grid;
+            place-items: center;
+            width: calc(25% - 2rem); /* Adjusted width calculation */
+            min-width: 350px;
+            height: 430px;
+            overflow: hidden;
+            border-radius: 0.625rem;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
 
       .card__background {
           object-fit: cover;
