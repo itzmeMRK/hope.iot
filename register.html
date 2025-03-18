@@ -259,8 +259,38 @@
           </div>
         </div>
       </div><!-- Submit button -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiCc2jdPCpvhokmH0yhPyDQ_FARvH9lnhaK3F0cX_jGZv3pA/viewform?embedded=true" width="640" height="3342" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <!-- Social Icons Row -->
+      <style>
+        /* Responsive container with intrinsic ratio */
+        .responsive-iframe {
+          position: relative;
+          width: 100%;
+          max-width: 640px; /* original max width */
+          margin: 0 auto; /* centers the container */
+          height: 0;
+          padding-top: 522%; /* (3342 / 640) * 100 ≈ 522% to preserve aspect ratio */
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        .responsive-iframe iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      </style>
+      
+      <div class="responsive-iframe">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiCc2jdPCpvhokmH0yhPyDQ_FARvH9lnhaK3F0cX_jGZv3pA/viewform?embedded=true" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+          Loading…
+        </iframe>
+      </div>
+            <!-- Social Icons Row -->
       <div class="row">
         <div class="col-12 text-center">
           <ul class="social-icons">
